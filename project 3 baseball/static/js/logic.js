@@ -3,8 +3,14 @@ function createMiLBMarkers(data) {
   let MiLBMarkers = [];
 
   data.forEach(function(stadium) {
-    let marker = L.marker([stadium.lat, stadium.lon])
-      .bindPopup("<h3>" + stadium.team + "</h3><h4>" + stadium.city + "</h4><p>League: " + stadium.league + "</p><p>Division: " + stadium.division + "</p>");
+    let marker = L.marker([stadium.lat, stadium.lon], {
+      icon: L.icon({
+        iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png', // Red marker icon for MiLB stadiums
+        iconSize: [25, 41],
+        iconAnchor: [12, 41],
+        popupAnchor: [1, -34]
+      })
+    }).bindPopup("<h3>" + stadium.team + "</h3><h4>" + stadium.city + "</h4><p>League: " + stadium.league + "</p><p>Division: " + stadium.division + "</p>");
     MiLBMarkers.push(marker);
   });
 
@@ -16,27 +22,19 @@ function createMLBMarkers(data) {
   let MLBMarkers = [];
 
   data.forEach(function(stadium) {
-    
-    let marker = L.marker([stadium.Latitude, stadium.Longitude])
-      .bindPopup("<h3>" + stadium.Team + "</h3><h4>" + stadium.CITY + "</h4><p>League: MLB</p><p>Name of Stadium: " + stadium.NAME + "</p>");
+    let marker = L.marker([stadium.Latitude, stadium.Longitude], {
+      icon: L.icon({
+        iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-blue.png', // Blue marker icon for MLB stadiums
+        iconSize: [25, 41],
+        iconAnchor: [12, 41],
+        popupAnchor: [1, -34]
+      })
+    }).bindPopup("<h3>" + stadium.Team + "</h3><h4>" + stadium.CITY + "</h4><p>League: MLB</p><p>Name of Stadium: " + stadium.NAME + "</p>");
     MLBMarkers.push(marker);
   });
 
   return L.layerGroup(MLBMarkers);
 }
-
-// Read the MiLB stadium locations CSV file
-d3.csv("MiLB Stadiums.csv").then(function(MiLBData) {
-  // Read MLB stadium locations CSV
-  d3.csv("MLB Stadiums with Lat-Lon.csv").then(function(MLBData) {
-    // Create MiLB and MLB stadium layers
-    let MiLBStadiumLayer = createMiLBMarkers(MiLBData);
-    let MLBStadiumLayer = createMLBMarkers(MLBData);
-
-    // Create map with MiLB and MLB stadium layers
-    createMap(MiLBStadiumLayer, MLBStadiumLayer);
-  });
-});
 
 // Function to create the map
 function createMap(MiLBStadiumLayer, MLBStadiumLayer) {
@@ -64,9 +62,33 @@ function createMap(MiLBStadiumLayer, MLBStadiumLayer) {
   });
 
   // Create a layer control and add it to the map
-  L.control.layers(baseMaps, overlayMaps, {
+  let layerControl = L.control.layers(baseMaps, overlayMaps, {
     collapsed: false
   }).addTo(map);
+
+  // Create a custom legend control
+  let legend = L.control({ position: "bottomright" });
+
+  legend.onAdd = function(map) {
+    let div = L.DomUtil.create("div", "legend");
+    div.innerHTML += "<h4>Affiliate Legend</h4>";
+    div.innerHTML += '<i style="background: #1f78b4"></i><span>MLB (Blue)</span><br>';
+    div.innerHTML += '<i style="background: #ff0000"></i><span>MiLB (Red)</span><br>';
+    return div;
+  };
+
+  legend.addTo(map);
 }
 
+// Read the MiLB stadium locations CSV file
+d3.csv("MiLB Stadiums.csv").then(function(MiLBData) {
+  // Read MLB stadium locations CSV
+  d3.csv("MLB Stadiums with Lat-Lon.csv").then(function(MLBData) {
+    // Create MiLB and MLB stadium layers
+    let MiLBStadiumLayer = createMiLBMarkers(MiLBData);
+    let MLBStadiumLayer = createMLBMarkers(MLBData);
 
+    // Create map with MiLB and MLB stadium layers
+    createMap(MiLBStadiumLayer, MLBStadiumLayer);
+  });
+});
