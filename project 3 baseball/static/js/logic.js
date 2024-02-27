@@ -66,18 +66,18 @@ function createMap(MiLBStadiumLayer, MLBStadiumLayer) {
     collapsed: false
   }).addTo(map);
 
-  // Create a custom legend control
-  let legend = L.control({ position: "bottomright" });
+ // Create a custom legend control
+ let legend = L.control({ position: "bottomright" });
 
-  legend.onAdd = function(map) {
-    let div = L.DomUtil.create("div", "legend");
-    div.innerHTML += "<h4>Affiliate Legend</h4>";
-    div.innerHTML += '<i style="background: #1f78b4"></i><span>MLB (Blue)</span><br>';
-    div.innerHTML += '<i style="background: #ff0000"></i><span>MiLB (Red)</span><br>';
-    return div;
-  };
-
-  legend.addTo(map);
+ legend.onAdd = function(map) {
+   let div = L.DomUtil.create("div", "legend");
+   div.innerHTML += "<h4>Affiliate Legend</h4>";
+   div.innerHTML += '<img src="images/MLB.png" style="width: 20px; height: 20px;"> <span> MLB </span><br>';
+   div.innerHTML += '<img src="images/MiLB.png" style="width: 20px; height: 20px;"> <span> MiLB </span><br>';
+   return div;
+ };
+ 
+ legend.addTo(map);
 }
 
 // Read the MiLB stadium locations CSV file
@@ -92,3 +92,4 @@ d3.csv("MiLB Stadiums.csv").then(function(MiLBData) {
     createMap(MiLBStadiumLayer, MLBStadiumLayer);
   });
 });
+
