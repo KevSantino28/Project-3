@@ -5,7 +5,7 @@ function createMiLBMarkers(data) {
   data.forEach(function(stadium) {
     let marker = L.marker([stadium.lat, stadium.lon], {
       icon: L.icon({
-        iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png', // Red marker icon for MiLB stadiums
+        iconUrl: 'images/MLB.png', // Red marker icon for MiLB stadiums
         iconSize: [25, 41],
         iconAnchor: [12, 41],
         popupAnchor: [1, -34]
@@ -24,7 +24,7 @@ function createMLBMarkers(data) {
   data.forEach(function(stadium) {
     let marker = L.marker([stadium.Latitude, stadium.Longitude], {
       icon: L.icon({
-        iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-blue.png', // Blue marker icon for MLB stadiums
+        iconUrl: 'images/MiLB.png', // Blue marker icon for MLB stadiums
         iconSize: [25, 41],
         iconAnchor: [12, 41],
         popupAnchor: [1, -34]
