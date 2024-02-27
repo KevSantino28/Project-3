@@ -28,9 +28,9 @@ To get started with the project, follow these steps:
 
 1. Clone the repository:
 *    git clone https://github.com/KevSantino28/Project-3.git
-2 Install the required dependencies:
+2. Install the required dependencies:
 *    pip install -r requirements.txt
-3.Open index.html in your browser to view the basketball stadiums map.
+3. Open index.html in your browser to view the basketball stadiums map.
   Run the Python script MLB_visuals.ipynb to visualize team wins over the years.
   
 ## Project Structure
