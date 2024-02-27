@@ -49,6 +49,8 @@ The basketball stadiums are visualized using Leaflet, a JavaScript library for i
 
 The Python script MLB_visuals.ipynb analyzes and visualizes team wins over the years using linear regression. It utilizes Pandas, NumPy, Matplotlib, SciPy, and ipywidgets.
 
+<img width="651" alt="Screenshot 2024-02-27 at 7 26 26 AM" src="https://github.com/KevSantino28/Project-3/assets/98873779/23c48c6f-994c-40a7-a5cf-5d33705ed2bc">
+
 ## Dependencies
 
 - Leaflet: [https://leafletjs.com/](https://leafletjs.com/)
