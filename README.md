@@ -27,16 +27,11 @@ Additionally, the project includes a Python script for analyzing and visualizing
 To get started with the project, follow these steps:
 
 1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/your-username/basketball-stadiums.git
-
+*    git clone https://github.com/KevSantino28/Project-3.git
 2 Install the required dependencies:
-  bash
-  Copy code
-  pip install -r requirements.txt
+*    pip install -r requirements.txt
 3.Open index.html in your browser to view the basketball stadiums map.
-  Run the Python script analyze_wins.py to visualize team wins over the years.
+  Run the Python script MLB_visuals.ipynb to visualize team wins over the years.
   
 ## Project Structure
 
@@ -44,7 +39,7 @@ The project is structured as follows:
 
 *     static/: Contains static files, including CSS styles and JavaScript code.
 *     data/: Contains CSV files for MLB and MiLB stadiums.
-*     analyze_wins.py: Python script for analyzing and visualizing team wins.
+*     MLB_visuals.ipynb: Python script for analyzing and visualizing team wins.
   
 ## Leaflet Map
 
@@ -74,8 +69,6 @@ Feel free to contribute to this project by opening issues or pull requests. Your
 
 This project is licensed under the MIT License.
 
-javascript
-Copy code
 
 
 
