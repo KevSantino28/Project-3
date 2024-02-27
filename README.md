@@ -47,7 +47,7 @@ The basketball stadiums are visualized using Leaflet, a JavaScript library for i
 
 ## Linear Regression Analysis
 
-The Python script analyze_wins.py analyzes and visualizes team wins over the years using linear regression. It utilizes Pandas, NumPy, Matplotlib, SciPy, and ipywidgets.
+The Python script MLB_visuals.ipynb analyzes and visualizes team wins over the years using linear regression. It utilizes Pandas, NumPy, Matplotlib, SciPy, and ipywidgets.
 
 ## Dependencies
 
@@ -58,8 +58,8 @@ The Python script analyze_wins.py analyzes and visualizes team wins over the yea
 
 ## How to Use
 
-1.Open index.html in a web browser to view the basketball stadiums map.
-2.Run analyze_wins.py to perform linear regression analysis on team wins.
+1. Open index.html in a web browser to view the basketball stadiums map.
+2. Run MLB_visuals.ipynb to perform linear regression analysis on team wins.
 
 ## Contributing
 
