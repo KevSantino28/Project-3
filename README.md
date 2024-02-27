@@ -37,9 +37,9 @@ To get started with the project, follow these steps:
 
 The project is structured as follows:
 
-*     static/: Contains static files, including CSS styles and JavaScript code.
-*     data/: Contains CSV files for MLB and MiLB stadiums.
-*     MLB_visuals.ipynb: Python script for analyzing and visualizing team wins.
+- static/: Contains static files, including CSS styles and JavaScript code.
+- data/: Contains CSV files for MLB and MiLB stadiums.
+- MLB_visuals.ipynb: Python script for analyzing and visualizing team wins.
   
 ## Leaflet Map
 
