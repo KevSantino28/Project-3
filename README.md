@@ -10,7 +10,6 @@ It includes a Python script for analyzing and visualizing team wins over the yea
 
 Additionally, the project includes a financial analysis section that explores MLB team payrolls over the years. It uses Python with Pandas, NumPy, Matplotlib, and ipywidgets to analyze and visualize estimated payrolls for selected teams.
 
-## Contents
 
 ## Contents
 
