@@ -6,7 +6,11 @@ This project utilizes data visualizations to tell a story about baseball stadium
 
 This project visualizes the locations of basketball stadiums, categorizing them into Major League Baseball (MLB) and Minor League Baseball (MiLB) stadiums. It uses Leaflet for mapping and D3 for data manipulation.
 
-Additionally, the project includes a Python script for analyzing and visualizing team wins over the years, using linear regression to show trends.
+It includes a Python script for analyzing and visualizing team wins over the years, using linear regression to show trends.
+
+Additionally, the project includes a financial analysis section that explores MLB team payrolls over the years. It uses Python with Pandas, NumPy, Matplotlib, and ipywidgets to analyze and visualize estimated payrolls for selected teams.
+
+## Contents
 
 ## Contents
 
