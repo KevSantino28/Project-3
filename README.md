@@ -33,6 +33,7 @@ To get started with the project, follow these steps:
 *    pip install -r requirements.txt
 3. Open index.html in your browser to view the basketball stadiums map.
   Run the Python script MLB_visuals.ipynb to visualize team wins over the years.
+4. Explore team financials by running the Python script MLB_Money.ipynb.
   
 ## Project Structure
 
@@ -41,6 +42,7 @@ The project is structured as follows:
 - static/: Contains static files, including CSS styles and JavaScript code.
 - data/: Contains CSV files for MLB and MiLB stadiums.
 - MLB_visuals.ipynb: Python script for analyzing and visualizing team wins.
+- MLB_Money.ipynb: Python script for analyzing and visualizing team financials.
   
 ## Leaflet Map
 
@@ -64,11 +66,15 @@ The financial analysis section explores MLB team payrolls over the years. It inc
 - D3.js: [https://d3js.org/](https://d3js.org/)
 - FontAwesome: [https://fontawesome.com/](https://fontawesome.com/)
 - Python Libraries: pandas, numpy, matplotlib, scipy, ipywidgets
+- Make sure to install these dependencies using the following command:
+*    pip install pandas numpy matplotlib scipy ipywidgets
+
 
 ## How to Use
 
 1. Open index.html in a web browser to view the basketball stadiums map.
 2. Run MLB_visuals.ipynb to perform linear regression analysis on team wins.
+3. Run MLB_Money.ipynb to explore MLB team payrolls.
 
 ## Contributing
 
