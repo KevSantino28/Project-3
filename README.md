@@ -91,7 +91,7 @@ The financial analysis section explores MLB team payrolls over the years. It inc
 Data sourced from
 * [Baseball-Refrence.com](https://www.baseball-reference.com/leagues/majors/index.shtml)
 * [Sports Stadium Locations](https://www.kaggle.com/datasets/logandonaldson/sports-stadium-locations?resource=download)
-  Special thanks to the developers of the used libraries.
+Special thanks to the developers of the used libraries.
 
 ## Contributing
 
