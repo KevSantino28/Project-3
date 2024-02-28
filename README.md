@@ -55,6 +55,8 @@ Financial Analysis
 
 The financial analysis section explores MLB team payrolls over the years. It includes a Python script MLB_Money.ipynb that utilizes Pandas, NumPy, Matplotlib, and ipywidgets to analyze and visualize estimated payrolls for selected teams.
 
+<img width="938" alt="Screenshot 2024-02-28 at 6 35 05 AM" src="https://github.com/KevSantino28/Project-3/assets/98873779/a24b0ba4-9555-4271-af1b-387e13212bb0">
+
 ## Dependencies
 
 - Leaflet: [https://leafletjs.com/](https://leafletjs.com/)
