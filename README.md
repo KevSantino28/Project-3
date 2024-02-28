@@ -35,8 +35,8 @@ To get started with the project, follow these steps:
 2. Install the required dependencies:
 *    pip install -r requirements.txt
 3. Open index.html in your browser to view the basketball stadiums map.
-  Run the Python script MLB_visuals.ipynb to visualize team wins over the years.
-4. Explore team financials by running the Python script MLB_Money.ipynb.
+4. Run the Python script MLB_visuals.ipynb to visualize team wins over the years.
+5. Explore team financials by running the Python script MLB_Money.ipynb.
   
 ## Project Structure
 
