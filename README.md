@@ -67,7 +67,7 @@ The financial analysis section explores MLB team payrolls over the years. It inc
 - FontAwesome: [https://fontawesome.com/](https://fontawesome.com/)
 - Python Libraries: pandas, numpy, matplotlib, scipy, ipywidgets
 - Make sure to install these dependencies using the following command:
-*    pip install pandas numpy matplotlib scipy ipywidgets
+*     pip install pandas numpy matplotlib scipy ipywidgets
 
 
 ## How to Use
