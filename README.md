@@ -51,6 +51,8 @@ The project is structured as follows:
 ## Leaflet Map
 
 The basketball stadiums are visualized using Leaflet, a JavaScript library for interactive maps. Custom icons are used to represent the locations of MLB and MiLB stadiums.
+<img width="963" alt="Screenshot 2024-03-01 at 5 22 21 AM" src="https://github.com/KevSantino28/Project-3/assets/98873779/69dee2e6-39c1-423c-94bf-ddcd69462ea9">
+
 
 ## Linear Regression Analysis
 
