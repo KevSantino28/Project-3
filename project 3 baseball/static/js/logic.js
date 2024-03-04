@@ -81,9 +81,9 @@ function createMap(MiLBStadiumLayer, MLBStadiumLayer) {
 }
 
 // Read the MiLB stadium locations CSV file
-d3.csv("MiLB Stadiums.csv").then(function(MiLBData) {
+d3.csv("Data/MiLB Stadiums.csv").then(function(MiLBData) {
   // Read MLB stadium locations CSV
-  d3.csv("MLB Stadiums with Lat-Lon.csv").then(function(MLBData) {
+  d3.csv("Data/MLB Stadiums with Lat-Lon.csv").then(function(MLBData) {
     // Create MiLB and MLB stadium layers
     let MiLBStadiumLayer = createMiLBMarkers(MiLBData);
     let MLBStadiumLayer = createMLBMarkers(MLBData);
